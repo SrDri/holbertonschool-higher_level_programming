@@ -12,3 +12,8 @@
 0x01-python-if_else_loops_functions/12-main.py
 0x01-python-if_else_loops_functions/__pycache__/101-remove_char_at.cpython-38.pyc
 0x01-python-if_else_loops_functions/101-main.py
+0x02-python-import_modules/0-import_add.py
+.gitignore
+0x02-python-import_modules/__pycache__/0-add.cpython-38.pyc
+0x02-python-import_modules/__pycache__/add_0.cpython-38.pyc
+0x02-python-import_modules/add_0.py
