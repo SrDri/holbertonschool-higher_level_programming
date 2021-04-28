@@ -3,4 +3,5 @@ if __name__ == "__main__":
     import hidden_4
 
     for files in dir(hidden_4):
-        print(files)
+        if files[0] != "_":
+            print(files)
