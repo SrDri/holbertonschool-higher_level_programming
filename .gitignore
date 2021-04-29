@@ -15,10 +15,14 @@
 0x02-python-import_modules/0-import_add.py
 .gitignore
 0x02-python-import_modules/__pycache__/0-add.cpython-38.pyc
-0x02-python-import_modules/__pycache__/add_0.cpython-38.pyc
+0x02-python-import_modules/__pycache__/add_0.cpython-38.pyc-
 0x02-python-import_modules/add_0.py
 0x02-python-import_modules/__pycache__/calculator_1.cpython-38.pyc
 0x02-python-import_modules/calculator_1.py
 0x02-python-import_modules/variable_load_5.py
 0x02-python-import_modules/__pycache__/variable_load_5.cpython-38.pyc
 0x02-python-import_modules/__pycache__/e_print.cpython-38.pyc
+prueba.py
+0x01-python-if_else_loops_functions/linked_lists.c
+0x01-python-if_else_loops_functions/insert
+0x01-python-if_else_loops_functions/13-main.c
