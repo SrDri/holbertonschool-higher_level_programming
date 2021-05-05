@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 
+
 def no_c(my_string):
 
-	rm = ""
+    rm = ""
 
-    for _c in my_string:
-        if _c is "c" or _c is "C":
+    for charc in my_string:
+        if charc is "c" or charc is "C":
             continue
 
-        rm = rm + _c
+        rm = rm + charc
 
     return rm
