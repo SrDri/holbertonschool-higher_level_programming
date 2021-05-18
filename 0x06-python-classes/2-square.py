@@ -7,6 +7,7 @@ class Square:
 
     def __init__(self, size=0):
         """Constructor"""
+
         if isinstance(size, int) != True:
             raise TypeError("size must be an integer")
             return
