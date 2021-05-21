@@ -20,13 +20,12 @@ class Rectangle:
     def __str__(self):
         """# character"""
         aux = ""
-        str(self.print_symbol)
 
         if self.__height == 0 or self.__width == 0:
             return aux
 
         for i in range(0, self.__height):
-            aux = aux + "{}".format(self.__width * self.print_symbol)
+            aux = aux + "{}".format(self.__width * str(self.print_symbol))
 
             if i + 1 != self.__height:
                 aux = aux + "\n"
