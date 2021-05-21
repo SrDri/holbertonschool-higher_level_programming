@@ -17,10 +17,11 @@ class Rectangle:
         """# character"""
         aux = ""
 
+        if self.__height == 0 or self.__width == 0:
+            return aux
+
         for i in range(0, self.__height):
             aux = aux + "{:s}\n".format(self.__width * "#")
-            if i + 1 != self.__height:
-                aux = aux + ""
 
         return aux
 
