@@ -22,6 +22,8 @@ class Rectangle:
 
         for i in range(0, self.__height):
             aux = aux + "{:s}\n".format(self.__width * "#")
+            if i + 1 != self.__height:
+                aux = aux + "\n"
 
         return aux
 
