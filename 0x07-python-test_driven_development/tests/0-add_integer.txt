@@ -1,0 +1,44 @@
+The `add_integer` module
+========================
+
+Usage of the `add_integer` function
+-----------------------------------
+
+1. Import should work
+>>> add_integer = __import__('0-add_integer').add_integer
+
+2. Sum of two float
+>>> add_integer(5.1, 5.2)
+10
+
+3. Sum of two negative int
+>>> add_integer(-5, -5)
+-10
+
+4. Sum of a string and an int - TypeError(a)
+>>> add_integer("5", 5)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+5. Sum of a string and an int - TypeError(b)
+>>> add_integer(-5, "hola")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+6. Add ridiculously large:
+>>> add_integer(99, 1e100)
+10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815203
+
+7. No arguments
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+8. ValueError for int
+>>> add_integer(int('hola'))
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'hola'
+
+9. Work with only one argument
+>>> add_integer(102)
+200
