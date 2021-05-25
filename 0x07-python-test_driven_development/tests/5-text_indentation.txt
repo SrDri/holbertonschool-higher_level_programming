@@ -1,0 +1,48 @@
+The `text_indentation` module
+========================
+
+Usage of the `text_indentation` function
+-----------------------------------
+
+1. Import
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+2. Print my name
+>>> text_indentation("Hola. Mi. Nombre. es. Juan Jose        .         ")
+Hola.
+<BLANKLINE>
+Mi.
+<BLANKLINE>
+Nombre.
+<BLANKLINE>
+es.
+<BLANKLINE>
+Juan Jose        .
+<BLANKLINE>
+
+3. Print test spaces
+>>> text_indentation("   This is. a test.")
+This is.
+<BLANKLINE>
+a test.
+<BLANKLINE>
+
+4. Print int
+>>> text_indentation("1")
+1
+
+5. Int in argument
+>>> text_indentation(1)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+6. Test quotes
+>>> text_indentation("""""")
+<BLANKLINE>
+
+7. test \n
+>>> text_indentation("Hello.\nWorld")
+Hello.
+<BLANKLINE>
+<BLANKLINE>
+World
