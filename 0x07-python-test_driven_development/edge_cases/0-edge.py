@@ -40,4 +40,4 @@ print(add_integer(99, 1e100))
 print(add_integer(102))
 # 200
 
-print(add_integer(True, 5))
+print(add_integer(float('NaN')))

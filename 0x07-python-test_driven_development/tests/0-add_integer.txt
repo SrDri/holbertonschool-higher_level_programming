@@ -46,3 +46,8 @@ ValueError: invalid literal for int() with base 10: 'hola'
 10. Work with only one argument
 >>> add_integer(float('inf'))
 89
+
+11.
+>>> add_integer(float('NaN'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
