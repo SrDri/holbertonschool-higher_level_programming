@@ -42,3 +42,7 @@ ValueError: invalid literal for int() with base 10: 'hola'
 9. Work with only one argument
 >>> add_integer(102)
 200
+
+10. Work with only one argument
+>>> add_integer(float('inf'))
+89
