@@ -39,3 +39,5 @@ print(add_integer(99, 1e100))
 # 9. Work with only one argument
 print(add_integer(102))
 # 200
+
+print(add_integer(True, 5))
