@@ -37,7 +37,9 @@ print(add_integer(99, 1e100))
 # ValueError: invalid literal for int() with base 10: 'hola'
 
 # 9. Work with only one argument
-print(add_integer(102))
+# print(add_integer(102))
 # 200
 
-print(add_integer(float('NaN')))
+print("------------")
+
+print(add_integer(float('inf'), 5))

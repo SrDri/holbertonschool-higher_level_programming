@@ -47,3 +47,8 @@ ValueError: cannot convert float NaN to integer
 10. Work with only one argument
 >>> add_integer(float('inf'))
 89
+
+11.
+>>> add_integer(float('inf'), 5)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
