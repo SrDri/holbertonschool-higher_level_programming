@@ -62,3 +62,7 @@ OverflowError: cannot convert float infinity to integer
 >>> add_integer()
 Traceback (most recent call last):
 TypeError: add_integer() missing 1 required positional argument: 'a'
+
+13.
+>>> add_integer(1, )
+99
