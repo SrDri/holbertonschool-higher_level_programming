@@ -57,3 +57,8 @@ OverflowError: cannot convert float infinity to integer
 12.
 >>> add_integer(10, 5)
 15
+
+13.
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
