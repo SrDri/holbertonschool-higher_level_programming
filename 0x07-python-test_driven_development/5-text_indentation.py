@@ -8,7 +8,7 @@ def text_indentation(text):
     """
     replace space, ., ? with new line.
     """
-    if not isinstance(text, str) or text == None:
+    if not isinstance(text, str) or text is None:
         raise TypeError("text must be a string")
 
     if text == "":
