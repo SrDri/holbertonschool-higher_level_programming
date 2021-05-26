@@ -42,4 +42,4 @@ print(add_integer(99, 1e100))
 
 print("------------")
 
-print(add_integer(float('inf'), 5))
+print(add_integer(float('inf')))
