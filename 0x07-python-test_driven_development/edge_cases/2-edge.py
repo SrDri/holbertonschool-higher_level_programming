@@ -5,7 +5,7 @@ sys.path.append('../')
 matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 # 1. Matrix divided by 1
-print(matrix_divided([[1, 2], [3, 4]], 1))
+# print(matrix_divided([[1, 2], [3, 4]], 1))
 # [[1.0, 2.0], [3.0, 4.0]]
 
 # 2. Matrix divided by 0
@@ -37,3 +37,6 @@ print(matrix_divided([[1, 2], [3, 4]], 1))
 # print(matrix_divided())
 # Traceback (most recent call last):
 # TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+
+print(matrix_divided([[1, 2, 3], [4, 5, 6]], float('inf')))
