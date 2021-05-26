@@ -39,15 +39,11 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
 Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'hola'
 
-9. Work with only one argument
->>> add_integer(102)
-200
+9.
+>>> add_integer(float('NaN'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
 
 10. Work with only one argument
 >>> add_integer(float('inf'))
 89
-
-11.
->>> add_integer(float('NaN'))
-Traceback (most recent call last):
-ValueError: cannot convert float NaN to integer
