@@ -21,6 +21,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_list_empty(self):
         self.assertEqual(max_integer([]), None)
+        self.assertIsNone(max_integer())
 
     def test_strings(self):
         self.assertEqual(max_integer(["A", "b", "c", "e", "t"]), "t")
@@ -33,6 +34,8 @@ class TestMaxInteger(unittest.TestCase):
 
     def max_middle(self):
         self.assertEqual(max_integer([1, 2, 20, 4, 5]), 20)
+        self.assertEqual(max_integer([-1, -0.5, -23]), -0.5)
+        self.assertEqual(max_integer([-1]), -1)
 
     def one_element(self):
         self.assertEqual(max_integer([1]), 1)
