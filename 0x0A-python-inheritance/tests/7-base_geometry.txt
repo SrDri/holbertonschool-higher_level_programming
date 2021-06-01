@@ -1,0 +1,41 @@
+1. imported correctly
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+2.
+>>> a = BaseGeometry()
+>>> a = BaseGeometry('Hola')
+Traceback (most recent call last):
+TypeError: BaseGeometry() takes no arguments
+
+3.
+>>> a.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
+
+4.
+>>> a.area('1')
+Traceback (most recent call last):
+TypeError: area() takes 1 positional argument but 2 were given
+
+5.
+>>> a.integer_validator()
+Traceback (most recent call last):
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+6.
+>>> a.integer_validator('1', 2 ,3)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+7.
+>>> a.integer_validator('test', 'juan')
+Traceback (most recent call last):
+TypeError: test must be an integer
+
+8.
+>>> a.integer_validator('test', 0)
+Traceback (most recent call last):
+ValueError: test must be greater than 0
+
+9.
+>>> a.integer_validator('test', 1)
