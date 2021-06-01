@@ -1,0 +1,23 @@
+1. imported correctly
+>>> MyList = __import__('1-my_list').MyList
+
+2. 
+>>> a = MyList()
+
+3. 
+>>> a = MyList([1, 2, 3, 4])
+
+4. 
+>>> print(a)
+[1, 2, 3, 4]
+
+5. 
+>>> a = MyList([-1, -2, -10, -20])
+
+6.
+>>> print(a)
+[-1, -2, -10, -20]
+
+7.
+>>> a.print_sorted()
+[-20, -10, -2, -1]
