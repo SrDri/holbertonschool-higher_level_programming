@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" is_kind_of_class function """
+""" inherits_from function """
 
 
 def inherits_from(obj, a_class):
