@@ -134,3 +134,6 @@ prueba.py
 0x0B-python-input_output/my_list.json
 0x0B-python-input_output/my_set.json
 0x0B-python-input_output/__pycache__/5-save_to_json_file.cpython-38.pyc
+0x0B-python-input_output/my_fake.json
+0x0B-python-input_output/__pycache__/6-load_from_json_file.cpython-38.pyc
+0x0B-python-input_output/my_fake.json~
