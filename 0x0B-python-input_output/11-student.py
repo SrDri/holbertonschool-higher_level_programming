@@ -31,7 +31,6 @@ class Student:
             json (dict): a dict with new attributes
             key y value
         """
-
         for key, value in json.items():
             if key is self.__dict__:
                 self.__dict__[key] = value
