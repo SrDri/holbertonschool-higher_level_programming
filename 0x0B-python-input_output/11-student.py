@@ -13,6 +13,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """ returns the dictionary description """
+
         if attrs is None:
             return self.__dict__
         else:
@@ -25,8 +26,12 @@ class Student:
             return aux
 
     def reload_from_json(self, json):
-        """ reload dictionary - key y value"""
+        """ reload dictionary
+        Args:
+            json (dict): a dict with new attributes
+            key y value
+        """
+
         for key, value in json.items():
             if key is self.__dict__:
                 self.__dict__[key] = value
-
