@@ -24,8 +24,8 @@ class Student:
 
             return aux
 
-        def reload_from_json(self, json):
-            for key, value in json.items():
-                if key is self.__dict__:
-                    self.__dict__[key] = value
+    def reload_from_json(self, json):
+        for key, value in json.items():
+            if key is self.__dict__:
+                self.__dict__[key] = value
                     
