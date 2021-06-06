@@ -15,6 +15,10 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    # Task 4 - main 3
+    def area(self):
+        return self.__width * self.__height
+
     @property
     def width(self):
         return self.__width
