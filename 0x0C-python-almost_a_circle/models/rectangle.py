@@ -15,6 +15,10 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    # Task 6 - main 5
+    def __str__(self):
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+
     # Task 4 - main 3
     def area(self):
         return self.__width * self.__height
