@@ -31,21 +31,30 @@ class Rectangle(Base):
         for i in range(0, self.__height):
             print(" " * self.x + "#" * self.width)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ Update arguments """
-        for argum, c in zip(args, range(5)):
-            if c == 0:
-                self.id = argum
-            if c == 1:
-                self.width = argum
-            if c == 2:
-                self.height = argum
-            if c == 3:
-                self.x = argum
-            if c == 4:
-                self.y = argum
-            if c == None:
-                break
+
+        if len(kwargs) > 0:
+            for key, valor in kwargs.items():
+                n_key = key if key == "id" else "_Rectangle__{}".format(key)
+                if n_key in self.__dict__:
+                    self.__dict__[n_key] = valor
+            return
+
+        if len(args) > 0:
+            for argum, c in zip(args, range(5)):
+                if c == 0:
+                    self.id = argum
+                if c == 1:
+                    self.width = argum
+                if c == 2:
+                    self.height = argum
+                if c == 3:
+                    self.x = argum
+                if c == 4:
+                    self.y = argum
+                if c == None:
+                    break
 
     @property
     def width(self):
