@@ -23,10 +23,13 @@ class Rectangle(Base):
     def area(self):
         return self.__width * self.__height
 
-    # Task 5 - main 4
+    # Task 5 and 7 - main 4, 6
     def display(self):
+        for eje_y in range(self.y):
+            print("")
+
         for i in range(0, self.__height):
-            print("{:s}".format(self.__width * "#"))
+            print(" " * self.x + "#" * self.width)
 
     @property
     def width(self):
