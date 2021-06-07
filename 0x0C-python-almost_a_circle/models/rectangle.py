@@ -31,6 +31,22 @@ class Rectangle(Base):
         for i in range(0, self.__height):
             print(" " * self.x + "#" * self.width)
 
+    def update(self, *args):
+        """ Update arguments """
+        for argum, c in zip(args, range(5)):
+            if c == 0:
+                self.id = argum
+            if c == 1:
+                self.width = argum
+            if c == 2:
+                self.height = argum
+            if c == 3:
+                self.x = argum
+            if c == 4:
+                self.y = argum
+            if c == None:
+                break
+
     @property
     def width(self):
         return self.__width
