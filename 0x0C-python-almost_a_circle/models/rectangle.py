@@ -18,7 +18,8 @@ class Rectangle(Base):
     # Task 6 - main 5
     def __str__(self):
         """ str representation """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
+                                                       self.width, self.height)
 
     # Task 4 - main 3
     def area(self):
@@ -56,7 +57,7 @@ class Rectangle(Base):
                     self.x = argum
                 if c == 4:
                     self.y = argum
-                if c == None:
+                if c is None:
                     break
 
     def to_dictionary(self):
