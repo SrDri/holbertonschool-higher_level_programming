@@ -17,14 +17,17 @@ class Rectangle(Base):
 
     # Task 6 - main 5
     def __str__(self):
+        """ str representation """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
     # Task 4 - main 3
     def area(self):
+        """ area def """
         return self.__width * self.__height
 
     # Task 5 and 7 - main 4, 6
     def display(self):
+        """ display # representation """
         for eje_y in range(self.y):
             print("")
 
@@ -68,10 +71,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """ width getter """
         return self.__width
 
     @width.setter
     def width(self, valor):
+        """ width setter """
         if not isinstance(valor, int):
             raise TypeError("width must be an integer")
 
@@ -82,10 +87,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """ height getter """
         return self.__height
 
     @height.setter
     def height(self, valor):
+        """ height setter """
         if not isinstance(valor, int):
             raise TypeError("height must be an integer")
 
@@ -96,10 +103,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """ x getter """
         return self.__x
 
     @x.setter
     def x(self, valor):
+        """ x setter """
         if not isinstance(valor, int):
             raise TypeError("x must be an integer")
 
@@ -110,10 +119,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """ y getter """
         return self.__y
 
     @y.setter
     def y(self, valor):
+        """ y setter """
         if not isinstance(valor, int):
             raise TypeError("y must be an integer")
 
