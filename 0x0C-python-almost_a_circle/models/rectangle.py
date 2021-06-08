@@ -56,6 +56,16 @@ class Rectangle(Base):
                 if c == None:
                     break
 
+    def to_dictionary(self):
+        """ returns the dictionary representation
+            of a Rectangle"""
+        aux = {}
+        for key, valor in self.__dict__.items():
+            key = key.replace("_Rectangle__", "")
+            aux[key] = valor
+
+        return aux
+
     @property
     def width(self):
         return self.__width
