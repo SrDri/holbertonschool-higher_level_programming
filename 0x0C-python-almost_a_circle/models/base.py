@@ -33,5 +33,42 @@ class Base:
             for i in list_objs:
                 contenido.append(cls.to_dictionary(i))
 
-        with open(cls.__name__ + ".json", 'w') as out_file:
+        with open(cls.__name__ + ".json", 'w', encoding="utf-8") as out_file:
             out_file.write(cls.to_json_string(contenido))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ return list JSON string representation"""
+        if json_string is None:
+            return "[]"
+
+        return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ return an all attributes """
+        if cls.__name__ == "Rectangle":
+            aux = cls(1, 1)
+        elif cls.__name__ == "Square":
+            aux = cls(1)
+
+        # pass the dictionary as a double pointer
+        aux.update(**dictionary)
+
+        return aux
+
+    @classmethod
+    def load_from_file(cls):
+        """ Return list of instances """
+        try:
+            with open(cls.__name__ + ".json", "r") as out_file:
+                contenido = cls.from_json_string(out_file.read())
+
+                aux = []
+                for elem in contenido:
+                    aux.append(cls.create(**elem))
+
+                return aux
+
+        except FileNotFoundError:
+            return []
