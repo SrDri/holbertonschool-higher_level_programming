@@ -39,7 +39,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """ return list JSON string representation"""
-        if not json_string:
+        if not json_string or len(json_string) == 0:
             return "[]"
 
         return json.loads(json_string)
