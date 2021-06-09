@@ -24,3 +24,7 @@ class TestBaseClass(unittest.TestCase):
         style = pep8.StyleGuide(quiet=True)
         pep = style.check_files(["models/base.py"])
         self.assertEqual(pep.total_errors, 0)
+
+
+if __name__ == '__main__':
+    unittest.main()
