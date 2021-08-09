@@ -27,4 +27,5 @@ if __name__ == "__main__":
     connection.close()
 
     for row in rows:
-        print(row)
+        if row[1] == argv[4]:
+            print(row)
