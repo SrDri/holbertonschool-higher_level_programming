@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" Send a post request to an ip
-"""
+""" send post request to ip """
 import requests
 import sys
 
