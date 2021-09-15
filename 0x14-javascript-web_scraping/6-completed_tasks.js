@@ -13,10 +13,8 @@ request.get(process.argv[2], (error, req, body) => {
 
   resultado.forEach(element => {
     if (element.completed === true) {
-      console.log("#### AQUI ### " + dict[element.userId])
       if (dict[element.userId] === undefined) {
         dict[element.userId] = 0;
-
       }
       dict[element.userId]++;
     }
